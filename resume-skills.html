@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> My Resume </title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0px;
+            font-family: sans-serif;
+            font-size: 30px;
+        }
+
+        /* Body Header */
+
+        #body-header {
+            height: 65vh;
+            opacity: 0.8;
+            background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding-top: 1.2rem;
+        }
+
+        /* Horizontal Lists */
+
+        .horizontal-list {
+            list-style: none;
+            padding-left: 0px;
+            margin: 0px;
+        }
+
+        .horizontal-list li {
+            display: inline-block;
+            margin: 0px 8px 8px 0px;
+            font-weight: 100;
+            font-size: 0.9rem;
+        }
+
+
+        .horizontal-list li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-menu li a {
+            transition: color 0.5s, border-bottom 4s;
+        }
+
+        .nav-menu li a:hover {
+            color: lightgrey;
+            border-bottom: 1px solid black;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* Name and Social Icons*/
+
+        #name-social-container {
+            margin-top: 20vh;
+        }
+
+        #my-name {
+            font-size: 3rem;
+            letter-spacing: 0.1rem;
+            color: white;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+
+        .social-icons li a i {
+            /*color: red;*/
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 50%;
+        }
+
+
+        .social-icons li a i:hover {
+            box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+        }
+
+        /*About Section*/
+
+        #about {
+            height: auto;
+            width: 100%;
+            position: relative;
+        }
+
+
+
+        /*---About Section---*/
+
+        #about {
+            height: auto;
+            width: 100%;
+            position: relative;
+            margin-bottom: 30px;
+
+        }
+
+        #my-image {
+            height: 12rem;
+            width: 12rem;
+            margin: auto;
+            margin-top: -17vh;
+        }
+
+        #my-image img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            box-shadow: 1px 2px 2px 2px lightgrey;
+            border: 3px solid white;
+        }
+
+        #about p {
+            color: grey;
+
+            font-size: 1.2rem;
+            padding: 1.2rem;
+            line-height: 1.5;
+            margin: auto;
+            text-align: justify;
+        }
+
+        #about p span {
+            color: #2857a4;
+        }
+
+
+
+        /*---section classes---*/
+
+        section {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section-heading {
+            width: auto;
+            padding: 20px 10px 10px;
+            /* margin:10px auto; */
+            font-weight: 400;
+        }
+
+        .section-heading span {
+            font-size: 40px;
+            color: #2857a4;
+            display: inline-block;
+            padding-top: 10px;
+            margin-right: 0.5rem;
+        }
+
+        section:nth-child(2n) {
+            background-color: #9e9b9b29;
+        }
+
+        section:nth-child(2n+1) {
+            background-color: white;
+        }
+
+
+        
+
+        /*---Skills Section*/
+
+        .skills-display {
+            width: 75%;
+            /* border: 2px solid black; */
+            /* height: 100px; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-bottom: 30px;
+        }
+
+        .skill-name span {
+            color: white;
+            font-size: 1rem;
+            margin-left: 10px;
+            margin-top: -50px;
+
+        }
+
+        .mb75px {
+            margin-bottom: 75px;
+        }
+
+        .margin-left-class{
+            margin-left: 25px;
+        }
+
+        .skills-progress div {
+            border-radius: 20px 0px 0px 20px;
+
+        }
+
+        .skills-progress {
+            width: 11rem;
+            height: 2.2rem;
+            background-color: #9e9b9b29;
+            border-radius: 1rem;
+            box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+            margin: 25px;
+            overflow: hidden;
+            /* border: 2px solid black; */
+        }
+
+        /*---Percentage-Class*/
+
+        .eighty-percent {
+            width: 80%;
+            height: inherit;
+        }
+
+        .fifty-percent {
+            width: 50%;
+            height: inherit;
+        }
+
+        .ninty-percent{
+            width: 90%;
+            height: inherit;
+        }
+
+        /*---Color-Class*/
+
+
+        .mb-blue {
+            background-color: #2857a4;
+        }
+
+        .mb-orange {
+            background-color:orangered;
+        }
+
+        .mb-green{
+            background-color:#10B981;
+        }
+        .mb-purple{
+            background-color: palevioletred;
+        }
+
+        /*---Portfolio---*/
+
+        .portfolio-display{
+            width: 85%;
+            
+            height: 800px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 30px;
+
+        }
+
+        .portfolio-tiles{
+            width: 18rem;
+            height: fit-content;
+            margin: 25px;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: relative;
+        }
+
+        .portfolio-tiles img{
+            height: 100%;
+            width: 100%;
+        }
+
+        .portfolio-tiles .portfolio-details{
+            position: absolute;
+            text-align: center;
+            color:transparent;
+            top: 0;
+            left: 0;
+            height: 100%;
+            padding: 10px;
+            transition: all 0.5s ease-in-out;
+
+        }
+
+        .portfolio-tiles:hover{
+            box-shadow: 0 0 20px #74ADC8;
+        }
+
+        .portfolio-tiles:hover .portfolio-details{
+            background-color: #80808078;
+            color: white;
+        }
+
+
+        
+
+
+        .text-uppercase {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="body-header">
+        <nav>
+
+            <ul class="horizontal-list text-center nav-menu">
+                <li>
+                    <a href="#"> Home </a>
+                </li>
+                <li>
+                    <a href="#about"> About </a>
+                </li>
+                <li>
+                    <a href="#skills"> Skills </a>
+                </li>
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div id="name-social-container">
+            <div class="text-center">
+                <h1 id="my-name">
+                    My Name
+                </h1>
+            </div>
+            <div>
+                <ul class="horizontal-list text-center social-icons">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-stack-overflow"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-quora"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </header>
+    <main>
+
+        <section id="about">
+            <div id="my-image">
+                <img src="/images/my-profile.jpg">
+            </div>
+            <p> Lorem Ipsum is simply dummy text of the printing and <span>typesetting industry</span> . Lorem Ipsum has
+                been the
+                industry's standard <span>dummy text ever</span> since the 1500s, when an unknown printer took a galley
+                of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s <span>with
+                    the
+                    release of Letraset sheets</span> containing Lorem Ipsum passages, and more recently with desktop
+                publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+
+        </section>
+
+        <section id="skills">
+
+            <h1 class="section-heading mb75px text-center text-uppercase">
+                <span><i class="fas fa-chalkboard-teacher "></i></span>
+                <span> SKILLS</span>
+            </h1>
+
+            <div class="skills-display">
+                <div class="skills-progress">
+
+
+                    <div class="fifty-percent mb-blue">
+                        <div class="skill-name">
+                            <span>C++</span>
+
+                        </div>
+
+
+                    </div>
+                    </div>
+
+                    <div class="skills-progress">
+
+                        <div class="ninty-percent mb-orange">
+                            <div class="skill-name">
+                                <span>HTML</span>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="skills-progress">
+
+                        <div class="eighty-percent mb-purple">
+                            <div class="skill-name">
+                                <span>CSS</span>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="skills-progress">
+
+                        <div class="fifty-percent mb-green">
+                            <div class="skill-name">
+                                <span>Javascript</span>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="skills-progress">
+
+                        <div class="fifty-percent mb-blue">
+                            <div class="skill-name">
+                                <span>React</span>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="skills-progress">
+
+                        <div class="eighty-percent mb-purple">
+                            <div class="skill-name">
+                                <span>Mongo DB</span>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            
+
+        </section>
+
+        <section id="experience">
+
+        </section>
+
+        <section id="education">
+
+        </section>
+
+        <section id="portfolio">
+            
+            <h1 class="section-heading mb75px text-center">
+                <span><i class="fas fa-th-list"></i></span>
+                <span> Portfolio</span>
+            </h1>
+
+            <div class="portfolio-display">
+                <div class="portfolio-tiles">
+                    <img src="images/image-1.png">
+                    <div class="portfolio-details">
+                        <p>Write here basic details about the project</p>
+
+                    </div>
+
+                </div>
+                <div class="portfolio-tiles">
+                    <img src="images/image-1.png">
+                    <div class="portfolio-details">
+                        <p>Write here basic details about the project</p>
+
+                    </div>
+
+                </div>
+                <div class="portfolio-tiles">
+                    <img src="images/image-1.png">
+                    <div class="portfolio-details">
+                        <p>Write here basic details about the project</p>
+
+                    </div>
+
+                </div>
+                <div class="portfolio-tiles">
+                    <img src="images/image-2.png">
+                    <div class="portfolio-details">
+                        <p>Write here basic details about the project</p>
+
+                    </div>
+
+                </div>
+                <div class="portfolio-tiles">
+                    <img src="images/image-2.png">
+                    <div class="portfolio-details">
+                        <p>Write here basic details about the project</p>
+
+                    </div>
+
+                </div>
+                <div class="portfolio-tiles">
+                    <img src="images/image-2.png">
+                    <div class="portfolio-details">
+                        <p>Write here basic details about the project</p>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            
+
+        </section>
+
+        <section id="contact">
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
