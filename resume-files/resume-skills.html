@@ -374,7 +374,7 @@
         .timeline-box {
             position: relative;
             width: 40%;
-            left: 5%;
+            left: 53%;
             min-height: 150px;
             /* border: 2px solid black; */
             display: flex;
@@ -382,8 +382,8 @@
 
 
 
-        .timeline :nth-child(2n+1) {
-            left: 53%;
+        .timeline :nth-child(2n) {
+            left: 0%;
 
         }
 
@@ -391,7 +391,7 @@
             position: absolute;
             height: 75%;
             width: 0;
-            border: 3px dashed lightblue;
+            border: 1px dashed lightblue;
             top: 10%;
             left: 50%;
         }
@@ -431,7 +431,7 @@
 
             top: 39%;
             /* left: -8%;  */
-            right: -14%;
+            right: -27%;
             z-index: 1;
         }
 
@@ -480,13 +480,35 @@
             color: grey;
         }
 
-
-
-
-
-
         .text-uppercase {
             text-transform: uppercase;
+        }
+        /*---Responsive---*/
+
+        @media  screen and (max-width: 600px){
+            .timeline .timeline-divider{
+                left: -5%;
+                top: 10%;
+            }
+            .timeline-box{
+               
+                left: 12% !important;
+                width: 80%;
+            }
+            /* .timeline :nth-child(2n+1){
+                left: 2%;
+                top: 10%;
+            }  */
+
+            /* .timeline-box ::after{
+                left: -24% !important;
+            } */
+            .timeline-box:nth-child(2n)::after{
+                left: -23%;
+            }
+            .timeline-box:nth-child(2n+1)::after{
+                left: -23%;
+            }
         }
     </style>
 </head>
@@ -683,85 +705,83 @@
             </h1>
 
             <div class="timeline">
+                
+                <div class="timeline-box">
+                    <div class="timeline-container">
+                        <div>
+                            <img
+                                src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png">
+
+                        </div>
+                        <div class="timeline-companyinfo">
+                            <span class="text-blue text-bold">Designation</span><br>
+                            <span class="text-orange text-bold">Company Name</span>
+                            <span class="text-gray text-bold">Month YYYY - Month YYYY</span>
+
+                        </div>
+                        <div class="timeline-personalinfo text-gray">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti expedita ipsum nulla
+                            natus labore, modi quisquam eos odio doloremque similique impedit veniam sed ad repellendus
+                            libero tempore quidem eum, nemo voluptate? 
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="timeline-box">
+                    <div class="timeline-container">
+                        <div>
+                            <img
+                                src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png">
+
+                        </div>
+                        <div class="timeline-companyinfo">
+                            <span class="text-blue text-bold">Designation</span><br>
+                            <span class="text-orange text-bold">Company Name</span>
+                            <span class="text-gray text-bold">Month YYYY - Month YYYY</span>
+
+                        </div>
+                        <div class="timeline-personalinfo text-gray">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti expedita ipsum nulla
+                            natus labore, modi quisquam eos odio doloremque similique impedit veniam sed ad repellendus
+                            libero tempore quidem eum, nemo voluptate? 
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="timeline-box">
+                    <div class="timeline-container">
+                        <div>
+                            <img
+                                src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png">
+
+                        </div>
+                        <div class="timeline-companyinfo">
+                            <span class="text-blue text-bold">Designation</span><br>
+                            <span class="text-orange text-bold">Company Name</span>
+                            <span class="text-gray text-bold">Month YYYY - Month YYYY</span>
+
+                        </div>
+                        <div class="timeline-personalinfo text-gray">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti expedita ipsum nulla
+                            natus labore, modi quisquam eos odio doloremque similique impedit veniam sed ad repellendus
+                            libero tempore quidem eum, nemo voluptate? 
+                        </div>
+
+
+                    </div>
+
+
+                </div>
                 <div class="timeline-divider">
                     <div class="timeline-traveller">
                         <i class="fa fa-plane" aria-hidden="true"></i>
                     </div>
-
-                </div>
-                <div class="timeline-box">
-                    <div class="timeline-container">
-                        <div>
-                            <img
-                                src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png">
-
-                        </div>
-                        <div class="timeline-companyinfo">
-                            <span class="text-blue text-bold">Designation</span><br>
-                            <span class="text-orange text-bold">Company Name</span>
-                            <span class="text-gray text-bold">Month YYYY - Month YYYY</span>
-
-                        </div>
-                        <div class="timeline-personalinfo text-gray">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti expedita ipsum nulla
-                            natus labore, modi quisquam eos odio doloremque similique impedit veniam sed ad repellendus
-                            libero tempore quidem eum, nemo voluptate? 
-                        </div>
-
-
-                    </div>
-
-
-                </div>
-                <div class="timeline-box">
-                    <div class="timeline-container">
-                        <div>
-                            <img
-                                src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png">
-
-                        </div>
-                        <div class="timeline-companyinfo">
-                            <span class="text-blue text-bold">Designation</span><br>
-                            <span class="text-orange text-bold">Company Name</span>
-                            <span class="text-gray text-bold">Month YYYY - Month YYYY</span>
-
-                        </div>
-                        <div class="timeline-personalinfo text-gray">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti expedita ipsum nulla
-                            natus labore, modi quisquam eos odio doloremque similique impedit veniam sed ad repellendus
-                            libero tempore quidem eum, nemo voluptate? 
-                        </div>
-
-
-                    </div>
-
-
-                </div>
-                <div class="timeline-box">
-                    <div class="timeline-container">
-                        <div>
-                            <img
-                                src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png">
-
-                        </div>
-                        <div class="timeline-companyinfo">
-                            <span class="text-blue text-bold">Designation</span><br>
-                            <span class="text-orange text-bold">Company Name</span>
-                            <span class="text-gray text-bold">Month YYYY - Month YYYY</span>
-
-                        </div>
-                        <div class="timeline-personalinfo text-gray">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti expedita ipsum nulla
-                            natus labore, modi quisquam eos odio doloremque similique impedit veniam sed ad repellendus
-                            libero tempore quidem eum, nemo voluptate? 
-                        </div>
-
-
-                    </div>
-
-
-                </div>
-                <div class="timeline-box">
 
                 </div>
 
