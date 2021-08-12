@@ -5,7 +5,7 @@ body {
     color: white;
     background-image:linear-gradient(to left, MidnightBlue, #093e79);    
     overflow: scroll;
-    background: #EDEBED url(to left, MidnightBlue, #093e79);
+    /* background: #EDEBED url(to left, MidnightBlue, #093e79); */
 }
 
 body:not(.loaded) #slider img {
@@ -478,19 +478,23 @@ aside{
     justify-content: space-between;
 }
 
+
+
+
+
 /*---footer---*/
 
 footer{
     width: 100%;
     display: inline-block;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 100px;
     background-color: grey;
 }
 
 .music-player{
     display: flex;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 100%;
 
 }
@@ -539,6 +543,7 @@ footer{
     justify-content: space-evenly; 
     margin-left: 50px;
     margin-right: 50px;
+    margin-top: 25px;
 
 }
 
@@ -567,12 +572,20 @@ footer{
 
 
 .song-player div{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 50%;
 }
 .music-toggle{
     width: 25%;
     margin-top: 35px;
+}
+
+.page-footer{
+    position: fixed;
+    left: 0;
+    bottom:0;
+    width: 100%;
+
 }
 
 
