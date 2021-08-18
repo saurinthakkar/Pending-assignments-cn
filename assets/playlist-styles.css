@@ -164,7 +164,7 @@ body:not(.loaded) #slider img {
 main{
     width: 65%;
     display: inline-block;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 100%;
     padding-left: 1rem;
     
@@ -376,7 +376,7 @@ aside{
 
 .followers-part{
     flex-grow: 0.5;
-    margin-left: 22rem;
+    margin-left: 31rem;
 }
 
 .followers-part span{
@@ -427,7 +427,7 @@ aside{
 
 #end-section{
     margin-top: 5rem;
-    height: 130vh;
+    height: 122vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -485,15 +485,19 @@ aside{
     
 }
 
+
+
 .playlist-items div{
     /* border: 1px solid black; */
     height: 3rem;
+   
    
     
 }
 
 .right{
     margin-top: 0.5rem;
+    pointer-events: none;
 }
 
 .right span{
