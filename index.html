@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Screen</title>
-    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="styles1.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
 <body onload="document.body.classList.add('loaded')">
+    
     <div class="wrapper">
+        <!--Header section - contains img,Name,search icon and profile image-->
         <header id="body-header">
             <div class="header-container">
                 <div class="header-first-container">
@@ -56,6 +58,8 @@
 
             </div>
         </header>
+        <!--All the middle sections are divided into sections.Each section represents one part of a page.
+        Main class contains carousel section,Latest release,Popular artist,Stations,Latest English and Latest Hindi-->
         <main class="page-body">
             <section class="album-container">
                 <img src="images/album-cover-1.jpg">
@@ -63,6 +67,7 @@
                 <img src="images/album-cover-3.jpg">
 
             </section>
+            <!--Release section starts from here-->
             <section class="release">
                 <h3>Latest Release</h3>
                 <div class="release-container">
@@ -117,6 +122,41 @@
                         </div>
 
                     </div>
+
+                    <div class="music-container">
+                        <div>
+                            <img src="images/album-cover-4.jpg">
+
+                        </div>
+                        <div class="music-name">
+                            <span>Onism</span><br>
+                            <span>09,Aug,2021</span>
+
+                        </div>
+
+                        <div class="push">
+                            <span><i class="fas fa-ellipsis-h"></i></span><br>
+                            <span>4:44</span>
+                        </div>
+
+                    </div>
+                    <div class="music-container">
+                        <div>
+                            <img src="images/album-cover-4.jpg">
+
+                        </div>
+                        <div class="music-name">
+                            <span>Onism</span><br>
+                            <span>09,Aug,2021</span>
+
+                        </div>
+
+                        <div class="push">
+                            <span><i class="fas fa-ellipsis-h"></i></span><br>
+                            <span>4:44</span>
+                        </div>
+
+                    </div>
                     <div class="music-container">
                         <div>
                             <img src="images/album-cover-4.jpg">
@@ -137,55 +177,107 @@
 
                 </div>
 
+            
             </section>
+
+            <!--Popular artist section starts from here-->
+
             <section id="popular-artists">
                 <h3>Popular artist</h3>
                 <div class="artist">
                     <div>
-                        <img src="images/eminem.jpg">
+                        <img src="images/eminem.jpg"><br>
+                        <div><i class="fas fa-play"></i></div>
                         <span>Eminem</span>
 
                     </div>
                     <div>
-                        <img src="images/alicia-keys.png">
+                        <img src="images/alicia-keys.png"><br>
                         <span>Alicia-keys</span>
 
                     </div>
                     <div>
-                        <img src="images/ed-sheeran.jpg">
+                        <img src="images/ed-sheeran.jpg"><br>
                         <span>Ed Sheeran</span>
                     </div>
                     <div>
-                        <img src="images/adele.jpg">
+                        <img src="images/adele.jpg"><br>
                         <span>Adele</span>
+                    </div>
+                    <div>
+                        <img src="images/enrique-iglesias.jpg"><br>
+                        <span>Enrique</span>
+                    </div>
+                    <div>
+                        <img src="images/ariana-grande.jpg"><br>
+                        <span>Ariana grande</span>
+                    </div>
+                    <div>
+                        <img src="images/dua-lipa.jpg"><br>
+                        <span>Dua Lipa</span>
+                    </div>
+                    <div>
+                        <img src="images/billie-eilish.jpg"><br>
+                        <span>Billie Eilish</span>
+                    </div>
+                    <div>
+                        <img src="images/john-legend.jpg"><br>
+                        <span>John Legend</span>
                     </div>
                 </div>
 
             </section>
-
+            <!--Music station section starts from here-->
             <section id="music-stations">
                 <div class="station-container">
                     <div class="different-stations">
-                        <img src="images/music-stations.jpg">
-                        <div>Stations</div>
+                       <div id="div1">
+                        <div id="div2">
+                            <div id="div3">
+                                <i class="far fa-play-circle"></i>
+                                <span>Stations</span>
+                            </div>
+                        </div>
+                       </div>
                     </div>
-                    <div class="different-stations">
-                        <img src="images/retro-music.jpg">
-                        <div>Retro</div>
-                    </div>
-                    <div class="different-stations">
-                        <img src="images/jazz-music.jpg">
-                        <div>Jazz</div>
-                    </div>
-                    <div class="different-stations">
-                        <img src="images/country-music.jpg">
-                        <div>Country</div>
-                    </div>
+                    <div>
+                        <div class="theme-music">
+                               <div>
+                                <img src="images/electronic-music.jpg">
+                                <div class="music-type">Rock</div>
 
+                               </div> 
+                               <div>
+                                <img src="images/jazz-music.jpg">
+                                <div class="music-type">Jazz</div>
+
+                               </div> 
+                               <div>
+                                <img src="images/party-music.jpg">
+                                <div class="music-type">Trap</div>
+
+                               </div> 
+                               <div>
+                                <img src="images/retro-music.jpg">
+                                <div class="music-type">Retro</div>
+
+                               </div> 
+                               <div>
+                                <img src="images/road-trip.jpg">
+                                <div class="music-type">Travel</div>
+
+                               </div> 
+                               <div>
+                                <img src="images/country-music.jpg">
+                                <div class="music-type">Country</div>
+
+                               </div> 
+                        </div>
+                    </div>
                 </div>
 
             </section>
-
+            <!--Genre section starts from here-->
             <section id="music-genre">
                 <div class="genre-container">
                     <div class="genre-stations">
@@ -207,7 +299,7 @@
                 </div>
 
             </section>
-
+            <!--English songs section-->
             <section id="english-songs">
                 <div class="child">
                     <span>
@@ -217,11 +309,8 @@
                 <div class="song-list">
                     <div class="label-tile">
 
-                        <img src="images/artist-1.jpg"><br>
-
-
-
-                        <span>Onism</span><br>
+                        <img src="images/binding-lights.png">
+                        <span>Binding Lights</span>
                         <span>AUG 11,2021</span>
 
 
@@ -229,11 +318,8 @@
                     </div>
                     <div class="label-tile">
 
-                        <img src="images/artist-2.jpg"><br>
-
-
-
-                        <span>Onism</span><br>
+                        <img src="images/circles.jpg">
+                        <span>Circles</span>
                         <span>AUG 11,2021</span>
 
 
@@ -241,11 +327,42 @@
                     </div>
                     <div class="label-tile">
 
-                        <img src="images/artist-3.jpg"><br>
+                        <img src="images/let-it-go.jpg">
+                        <span>Let it go</span>
+                        <span>AUG 11,2021</span>
+
+                    </div>
+                    <div class="label-tile">
+
+                        <img src="images/out-my-face.jpg">
+                        <span>Out My Face</span>
+                        <span>AUG 11,2021</span>
 
 
 
-                        <span>Onism</span><br>
+                    </div>
+                    <div class="label-tile">
+
+                        <img src="images/radioactive.jpg">
+                        <span>Radioactive</span>
+                        <span>AUG 11,2021</span>
+
+
+
+                    </div>
+                    <div class="label-tile">
+
+                        <img src="images/rescue-me.png">
+                        <span>Rescue Me</span>
+                        <span>AUG 11,2021</span>
+
+
+
+                    </div>
+                    <div class="label-tile">
+
+                        <img src="images/Say-something.png">
+                        <span>Say Something</span>
                         <span>AUG 11,2021</span>
 
 
@@ -256,6 +373,7 @@
                 </div>
 
             </section>
+            <!--hindi songs section-->
             <section id="english-songs">
                 <div class="child">
                     <span>
@@ -265,11 +383,8 @@
                 <div class="song-list">
                     <div class="label-tile">
 
-                        <img src="images/artist-4.jpg"><br>
-
-
-
-                        <span>Onism</span><br>
+                        <img src="images/tere-sang-mere.jpg">
+                        <span>Tere Sang Yara</span>
                         <span>AUG 11,2021</span>
 
 
@@ -277,11 +392,11 @@
                     </div>
                     <div class="label-tile">
 
-                        <img src="images/artist-5.jpg"><br>
+                        <img src="images/Kaun_Tujhe.jpg">
 
 
 
-                        <span>Onism</span><br>
+                        <span>Kaun Tujhe</span>
                         <span>AUG 11,2021</span>
 
 
@@ -289,11 +404,42 @@
                     </div>
                     <div class="label-tile">
 
-                        <img src="images/artist-6.jpg"><br>
+                        <img src="images/bekhayali.jpg">
+                        <span>Bekhayali</span>
+                        <span>AUG 11,2021</span>
+
+                    </div>
+                    <div class="label-tile">
+
+                        <img src="images/galiyan.jpg">
+                        <span>Galliyan</span>
+                        <span>AUG 11,2021</span>
 
 
 
-                        <span>Onism</span><br>
+                    </div>
+                    <div class="label-tile">
+
+                        <img src="images/Baarish.jpeg">
+                        <span>Barrish</span>
+                        <span>AUG 11,2021</span>
+
+
+
+                    </div>
+                    <div class="label-tile">
+
+                        <img src="images/lahore.jpeg">
+                        <span>Lahore</span>
+                        <span>AUG 11,2021</span>
+
+
+
+                    </div>
+                    <div class="label-tile">
+
+                        <img src="images/tera-hua.jpg">
+                        <span>Tera hua</span>
                         <span>AUG 11,2021</span>
 
 
@@ -304,29 +450,41 @@
                 </div>
 
             </section>
+                
 
 
 
         </main>
+        <!--Aside section contains one section only for playlist-->
         <aside>
             <section>
 
                 <div class="playlist-title-container">
-                    <span class="child1">Queue</span>
-                    <span class="child2">Queue</span>
-                    <span class="child3"><i class="fas fa-caret-down"></i></span>
+                    <span class="child1">Playlist</span>
+                    <span class="child2">
+                        <a  href="#pop-up">Queue</a>
+                        <i class="fas fa-caret-down"></i>
+                    </span>
+                    <div id="pop-up" class="options">
+                        <p><a>Playlist</a></p>
+                        <hr>
+                        <p><a>Favourite song</a></p>
+                        <hr>
+                        <p><a id="close-option" href="#">Close</a></p>
+                    </div>
+                    
 
                 </div>
 
             </section>
-            <section>
+            <section id="aside-section2">
                 <div class="playlist-queue-container">
                     <div class="playlist-container">
                         <span class="playlist-no">01</span>
-                        <img class="playlist-img" src="images/ed-sheeran.jpg">
+                        <img class="playlist-img" src="images/circles.jpg">
                         <div class="playlist-text">
-                            <span>Mirage</span><br>
-                            <span>Else World</span>
+                            <span>Circles</span><br>
+                            <span>Wildes</span>
                         </div>
 
                         <span class="playlist-icon"><i class="far fa-heart"></i></span>
@@ -334,10 +492,32 @@
                     </div>
                     <div class="playlist-container">
                         <span class="playlist-no">02</span>
-                        <img class="playlist-img" src="images/eminem.jpg">
+                        <img class="playlist-img" src="images/rescue-me.png">
                         <div class="playlist-text">
-                            <span>Mirage</span><br>
+                            <span>Rescue Me</span><br>
+                            <span>One Republic</span>
+                        </div>
+
+                        <span class="playlist-icon"><i class="far fa-heart"></i></span>
+
+                    </div>
+                    <div class="playlist-container">
+                        <span class="playlist-no">03</span>
+                        <img class="playlist-img" src="images/tera-hua.jpg">
+                        <div class="playlist-text">
+                            <span>Tera hua</span><br>
                             <span>Else World</span>
+                        </div>
+
+                        <span class="playlist-icon"><i class="far fa-heart"></i></span>
+
+                    </div>
+                    <div class="playlist-container">
+                        <span class="playlist-no">04</span>
+                        <img class="playlist-img" src="images/radioactive.jpg">
+                        <div class="playlist-text">
+                            <span>Radioactive</span><br>
+                            <span>Imagine Dragon</span>
                         </div>
 
                         <span class="playlist-icon"><i class="far fa-heart"></i></span>
@@ -345,7 +525,19 @@
                     </div>
 
                     <div class="playlist-container">
-                        <span class="playlist-no">03</span>
+                        <span class="playlist-no">05</span>
+                        <img class="playlist-img" src="images/binding-lights.png">
+                        <div class="playlist-text">
+                            <span>Alone Again</span><br>
+                            <span>Weekend</span>
+                        </div>
+
+                        <span class="playlist-icon"><i class="far fa-heart"></i></span>
+
+                    </div>
+
+                    <div class="playlist-container">
+                        <span class="playlist-no">06</span>
                         <img class="playlist-img" src="images/jazz-music.jpg">
                         <div class="playlist-text">
                             <span>Mirage</span><br>
@@ -356,7 +548,7 @@
 
                     </div>
                     <div class="playlist-container">
-                        <span class="playlist-no">04</span>
+                        <span class="playlist-no">07</span>
                         <img class="playlist-img" src="images/road-trip.jpg">
                         <div class="playlist-text">
                             <span>Mirage</span><br>
@@ -367,44 +559,44 @@
 
                     </div>
                     <div class="playlist-container">
-                        <span class="playlist-no">05</span>
-                        <img class="playlist-img" src="images/retro-music.jpg">
-                        <div class="playlist-text">
-                            <span>Mirage</span><br>
-                            <span>Else World</span>
-                        </div>
-
-                        <span class="playlist-icon"><i class="far fa-heart"></i></span>
-
-                    </div>
-                    <div class="playlist-container">
-                        <span class="playlist-no">06</span>
-                        <img class="playlist-img" src="images/party-music.jpg">
-                        <div class="playlist-text">
-                            <span>Mirage</span><br>
-                            <span>Else World</span>
-                        </div>
-
-                        <span class="playlist-icon"><i class="far fa-heart"></i></span>
-
-                    </div>
-                    <div class="playlist-container">
-                        <span class="playlist-no">07</span>
-                        <img class="playlist-img" src="images/alicia-keys.png">
-                        <div class="playlist-text">
-                            <span>Mirage</span><br>
-                            <span>Else World</span>
-                        </div>
-
-                        <span class="playlist-icon"><i class="far fa-heart"></i></span>
-
-                    </div>
-                    <div class="playlist-container">
                         <span class="playlist-no">08</span>
-                        <img class="playlist-img" src="images/adele.jpg">
+                        <img class="playlist-img" src="images/Say-something.png">
                         <div class="playlist-text">
-                            <span>Mirage</span><br>
+                            <span>Say Something</span><br>
                             <span>Else World</span>
+                        </div>
+
+                        <span class="playlist-icon"><i class="far fa-heart"></i></span>
+
+                    </div>
+                    <div class="playlist-container">
+                        <span class="playlist-no">09</span>
+                        <img class="playlist-img" src="images/circles.jpg">
+                        <div class="playlist-text">
+                            <span>Circles</span><br>
+                            <span>Wildes</span>
+                        </div>
+
+                        <span class="playlist-icon"><i class="far fa-heart"></i></span>
+
+                    </div>
+                    <div class="playlist-container">
+                        <span class="playlist-no">10</span>
+                        <img class="playlist-img" src="images/lahore.jpeg">
+                        <div class="playlist-text">
+                            <span>Lahore</span><br>
+                            <span>Else World</span>
+                        </div>
+
+                        <span class="playlist-icon"><i class="far fa-heart"></i></span>
+
+                    </div>
+                    <div class="playlist-container">
+                        <span class="playlist-no">11</span>
+                        <img class="playlist-img" src="images/let-it-go.jpg">
+                        <div class="playlist-text">
+                            <span>Let it go</span><br>
+                            <span>Frozen</span>
                         </div>
 
                         <span class="playlist-icon"><i class="far fa-heart"></i></span>
@@ -414,6 +606,7 @@
 
             </section>
         </aside>
+        <!--This is a footer section and in this section we have sticket player-->
         <footer class="page-footer">
             <div class="music-player">
                 <div class="active-song-description">
