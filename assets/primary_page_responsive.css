@@ -1,0 +1,77 @@
+@media only screen and (max-width: 1024px) {
+  body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 0.5rem;
+    margin-top: 0;
+  }
+
+  #body-header {
+    height: auto;
+  }
+  .header-container {
+    height: auto;
+  }
+  .header-first-container {
+    width: 13%;
+  }
+  .header-searchbar {
+    width: 75%;
+  }
+  main {
+    margin-top: 4rem;
+  }
+
+  .release-container {
+    width: 50rem;
+    height: 20rem;
+    justify-content: start;
+  }
+
+  .release-container .music-container {
+    margin-left: 1rem;
+    width: 40%;
+  }
+  .music-container div {
+    width: 30%;
+  }
+  #popular-artists {
+    width: 45rem;
+  }
+  .artist {
+    justify-content: start;
+    width: inherit;
+    height: 10rem;
+    margin-bottom: 8rem;
+  }
+  .artist div {
+    width: 8rem;
+    height: 1.5rem;
+    margin-bottom: 7rem;
+  }
+
+  .station-container {
+    height: inherit;
+  }
+  #div3 i {
+    padding-left: 2rem;
+    font-size: 2em;
+  }
+  #div3 span {
+    padding-left: 0.3rem;
+    font-size: 2.6em;
+  }
+
+  .genre-container {
+    justify-content: space-around;
+  }
+  .genre-container div {
+    width: 180px;
+  }
+  .genre-container .genre-stations div {
+    left: 3.5rem;
+    font-size: 1.5rem;
+  }
+  #english-songs .child {
+    font-size: 1rem;
+  }
+}

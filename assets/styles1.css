@@ -54,9 +54,9 @@ body::after {
 
 .header-first-container {
   display: flex;
-  width: 26%;
+  width: 20%;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 
 #music-player-name {
@@ -65,14 +65,15 @@ body::after {
 }
 
 .fav-text {
+  width: 10%;
   margin-top: 20px;
-  margin-right: 100px;
+  margin-right: 10px;
 }
 
 .header-searchbar {
   display: flex;
   width: 30%;
-  width: 50%;
+  width: 70%;
   align-items: center;
 }
 
@@ -117,14 +118,20 @@ body::after {
 }
 
 .header-searchbar .notification {
-  margin-left: 4rem;
+  display: flex;
+  margin-left: 0.5rem;
   text-align: center;
+  justify-content: end;
+  width: 25%;
+}
+.header-searchbar .notification span {
+  padding-left: 0.5rem;
 }
 
 .header-searchbar .profileimage {
-  margin-left: 7rem;
   height: 100%;
   width: 30%;
+  padding-top: 1.5rem;
 }
 
 .header-searchbar .profileimage img {
@@ -163,6 +170,10 @@ main {
   transform: scale(1.5);
 }
 
+.release {
+  height: 25rem;
+}
+
 .release h3 {
   padding-left: 1rem;
 }
@@ -177,10 +188,10 @@ main {
 
 .release-container {
   display: flex;
-  margin-left: 2rem;
-  width: 900px;
+  width: 57rem;
   height: 60vh;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .release-container :hover {
@@ -189,7 +200,7 @@ main {
 
 .release-container .music-container {
   display: flex;
-  margin-left: 3rem;
+  margin-left: 1rem;
   margin-bottom: 2rem;
   height: 5rem;
 }
@@ -422,15 +433,16 @@ main {
   margin-left: 1rem;
 }
 
-#english-songs .child {
+/* #english-songs .child {
   height: 5%;
   width: 100%;
   margin-bottom: 1rem;
-}
+} */
 
 #english-songs .child {
-  height: 3rem;
   width: 100%;
+  margin-bottom: 1rem;
+  height: 3rem;
 }
 
 .song-list {
@@ -490,8 +502,9 @@ aside {
 }
 
 .playlist-title-container .child1 {
-  padding: 5px 20px 20px 10px;
+  padding-top: 1.5rem;
   flex-grow: 2;
+  font-size: 2rem;
 }
 
 .child2 {
