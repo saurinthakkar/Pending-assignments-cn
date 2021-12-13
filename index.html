@@ -13,6 +13,8 @@
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
       crossorigin="anonymous"
     />
+  
+   
   </head>
 
   <body onload="document.body.classList.add('loaded')">
@@ -55,6 +57,7 @@
           </div>
         </div>
       </header>
+  
       <!--All the middle sections are divided into sections.Each section represents one part of a page.
         Main class contains carousel section,Latest release,Popular artist,Stations,Latest English and Latest Hindi-->
       <main class="page-body">
@@ -62,6 +65,7 @@
           <img src="assets/album-cover-1.jpg" />
           <img src="assets/album-cover-2.jpg" />
           <img src="assets/album-cover-3.jpg" />
+          
         </section>
         <!--Release section starts from here-->
         <section class="release">
@@ -352,10 +356,19 @@
         </section>
       </main>
       <!--Aside section contains one section only for playlist-->
-      <aside>
-        <section>
+      
+        
+      <aside class="side-section">
+        <section class="side-menu">
+          <label for="more">More</label>
+          <input type="checkbox" id="more">
+      </section>
+        <section class="aside-section1">
           <div class="playlist-title-container">
+            
             <span class="child1">Playlist</span>
+             
+     
             <span class="child2">
               <a href="#pop-up">Queue</a>
               <i class="fas fa-caret-down"></i>

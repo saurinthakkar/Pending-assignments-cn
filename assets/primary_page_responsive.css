@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
   body {
     font-family: "Segoe UI", Arial, sans-serif;
     font-size: 0.5rem;
@@ -18,21 +18,21 @@
     width: 75%;
   }
   main {
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
 
   .release-container {
-    width: 50rem;
+    width: 100%;
     height: 20rem;
     justify-content: start;
   }
 
   .release-container .music-container {
     margin-left: 1rem;
-    width: 40%;
+    width: 42%;
   }
   .music-container div {
-    width: 30%;
+    width: 26%;
   }
   #popular-artists {
     width: 45rem;
@@ -73,5 +73,42 @@
   }
   #english-songs .child {
     font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  main {
+    width: 95%;
+  }
+  .music-container div {
+    width: 20%;
+  }
+  .artist {
+    width: 100%;
+    height: 18rem;
+  }
+  .artist div {
+    width: 6rem;
+    height: 1rem;
+    margin-bottom: 2rem;
+  }
+  .side-menu {
+    position: absolute;
+    visibility: visible;
+    opacity: 1;
+    width: 20%;
+    top: 6rem;
+    right: 3rem;
+  }
+
+  .aside-section1 ~ #aside-section2 {
+    display: inline-block;
+    position: absolute;
+    width: 30%;
+    border: 1px solid white;
+    background-color: blue;
+    width: 30%;
+    top: 10rem;
+    height: 30rem;
   }
 }
