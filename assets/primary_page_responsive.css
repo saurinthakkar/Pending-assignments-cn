@@ -92,23 +92,57 @@
     height: 1rem;
     margin-bottom: 2rem;
   }
+  #side-button {
+    position: absolute;
+    top: 6rem;
+    right: 1rem;
+    display: inline-block;
+  }
   .side-menu {
     position: absolute;
-    visibility: visible;
-    opacity: 1;
     width: 20%;
     top: 6rem;
     right: 3rem;
   }
+  .aside-section1 {
+    top: 8rem;
+    right: 1rem;
+    margin: 0;
+    height: 10rem;
+    font-size: 0.5rem;
+  }
 
-  .aside-section1 ~ #aside-section2 {
-    display: inline-block;
+  .aside-section1,
+  #aside-section2 {
+    display: none;
     position: absolute;
     width: 30%;
     border: 1px solid white;
     background-color: blue;
-    width: 30%;
-    top: 10rem;
+  }
+
+  #aside-section2 {
+    top: 12rem;
+    right: 1rem;
     height: 30rem;
+  }
+  .music-player .active-song-description {
+    width: 33%;
+    justify-content: space-between;
+  }
+  .song-player {
+    width: 40%;
+  }
+  #song-toggle span {
+    font-size: 15px;
+  }
+  #player-toggle span {
+    font-size: 15px;
+  }
+  .music-toggle {
+    width: 27%;
+  }
+  .music-toggle span {
+    font-size: 15px;
   }
 }

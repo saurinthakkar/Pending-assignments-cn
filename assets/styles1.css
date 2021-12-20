@@ -142,11 +142,14 @@ body::after {
   max-width: 100%;
 }
 /*Header ends and side menu icon starts*/
-.side-menu {
+#side-button {
   height: 2rem;
-  width: 100%;
+  width: 30%;
   border: 1px solid white;
-  text-align: right;
+  float: right;
+  background-color: darkblue;
+  color: red;
+  display: none;
 }
 
 /*Main section starts from here*/
@@ -664,11 +667,16 @@ footer {
   display: flex;
 }
 
-#song-image img {
+#song-image {
   width: 4rem;
-  height: 5rem;
-  padding-left: 1rem;
-  padding-top: 1rem;
+  height: 4.5rem;
+  padding-top: 0.2rem;
+  padding-left: 2rem;
+}
+
+#song-image img {
+  width: inherit;
+  height: inherit;
 }
 
 .music-player .active-song-description span {
